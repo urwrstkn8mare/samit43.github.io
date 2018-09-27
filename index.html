@@ -8,8 +8,8 @@
     <script>
       var page = "https://urwrstkn8mare.000webhostapp.com";
       document.getElementById("message").innerHTML = "Redirecting to " + page;
-      document.getElementById("link").innerHTML = page;
-      document.getElementById("link").setAttribute("href", page)
+      document.getElementsByTagName("A")[0].innerHTML = page;
+      document.getElementsByTagName("A")[0].setAttribute("href", page)
       window.location = page;
       window.location.href = page;
       window.location.assign(page);
@@ -27,11 +27,6 @@
       If you don't see a "go to" link then javscript is not working or enabled.<br>
       Enable this as it is required in the page it is being redirected to.<br>
     </p>
-    <script>
-      document.getElementById("message").innerHTML = "Redirecting to " + page;
-      document.getElementById("link").innerHTML = page;
-      document.getElementById("link").setAttribute("href", page)
-    </script>
   </body>
 
 </html>
