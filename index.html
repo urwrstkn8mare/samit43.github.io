@@ -27,6 +27,11 @@
       If you don't see a "go to" link then javscript is not working or enabled.<br>
       Enable this as it is required in the page it is being redirected to.<br>
     </p>
+    <script>
+      document.getElementById("message").innerHTML = "Redirecting to " + page;
+      document.getElementById("link").innerHTML = page;
+      document.getElementById("link").setAttribute("href", page)
+    </script>
   </body>
 
 </html>
